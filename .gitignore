@@ -17,3 +17,9 @@ hs_err_pid*
 /RemoteSystemsTempFiles
 
 /Servers
+
+/CSH/.settings
+
+/CSH/.classpath
+
+/CSH/build
