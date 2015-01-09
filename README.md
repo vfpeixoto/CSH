@@ -1,4 +1,3 @@
-CursoJava
+CSH - Control System Hotel
 =========
 
-Trabalhos referentes ao curso.
