@@ -45,35 +45,37 @@ public class PessoaFisicaBean extends PessoaBean implements Serializable {
 	public String getNome() {
 		return nome;
 	}
-	public void setNome(String nome) {
+	public PessoaFisicaBean setNome(String nome) {
 		this.nome = nome;
+		return this;
 	}
 	public Date getDataNascimento() {
 		return dataNascimento;
 	}
-	public void setDataNascimento(Date dataNascimento) {
+	public PessoaFisicaBean setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
+		return this;
 	}
 	public String getCpf() {
 		return cpf;
 	}
-	public void setCpf(String cpf) {
+	public PessoaFisicaBean setCpf(String cpf) {
 		this.cpf = cpf;
+		return this;
 	}
 	public String getRg() {
 		return rg;
 	}
-	public void setRg(String rg) {
+	public PessoaFisicaBean setRg(String rg) {
 		this.rg = rg;
+		return this;
 	}
 	public String getOrgaoEmissor() {
 		return orgaoEmissor;
 	}
-	public void setOrgaoEmissor(String orgaoEmissor) {
+	public PessoaFisicaBean setOrgaoEmissor(String orgaoEmissor) {
 		this.orgaoEmissor = orgaoEmissor;
-	}
-	
-	
-	
+		return this;
+	}	
 	
 }

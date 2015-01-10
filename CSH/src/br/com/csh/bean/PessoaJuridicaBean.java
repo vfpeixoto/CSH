@@ -30,6 +30,7 @@ public class PessoaJuridicaBean extends PessoaBean implements Serializable {
 	public PessoaJuridicaBean() {
 		super();
 	}
+
 	public PessoaJuridicaBean(int pessoaID, String email, Date dataAlteracao,
 			Date dataCadastrado, Boolean ativo, String razaoSocial,
 			String fantasia, String cnpj, String inscricaoEstadual,
@@ -46,49 +47,44 @@ public class PessoaJuridicaBean extends PessoaBean implements Serializable {
 	public String getRazaoSocial() {
 		return razaoSocial;
 	}
-
-	public void setRazaoSocial(String razaoSocial) {
+	public PessoaJuridicaBean setRazaoSocial(String razaoSocial) {
 		this.razaoSocial = razaoSocial;
+		return this;
 	}
-
 	public String getFantasia() {
 		return fantasia;
 	}
-
-	public void setFantasia(String fantasia) {
+	public PessoaJuridicaBean setFantasia(String fantasia) {
 		this.fantasia = fantasia;
+		return this;
 	}
-
 	public String getCnpj() {
 		return cnpj;
 	}
-
-	public void setCnpj(String cnpj) {
+	public PessoaJuridicaBean setCnpj(String cnpj) {
 		this.cnpj = cnpj;
+		return this;
 	}
-
 	public String getInscricaoEstadual() {
 		return inscricaoEstadual;
 	}
-
-	public void setInscricaoEstadual(String inscricaoEstadual) {
+	public PessoaJuridicaBean setInscricaoEstadual(String inscricaoEstadual) {
 		this.inscricaoEstadual = inscricaoEstadual;
+		return this;
 	}
-
 	public String getInscricaoMunicipal() {
 		return inscricaoMunicipal;
 	}
-
-	public void setInscricaoMunicipal(String inscricaoMunicipal) {
+	public PessoaJuridicaBean setInscricaoMunicipal(String inscricaoMunicipal) {
 		this.inscricaoMunicipal = inscricaoMunicipal;
+		return this;
 	}
-
 	public String getCodReserva() {
 		return codReserva;
 	}
-
-	public void setCodReserva(String codReserva) {
+	public PessoaJuridicaBean setCodReserva(String codReserva) {
 		this.codReserva = codReserva;
+		return this;
 	}
 
 }

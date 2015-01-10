@@ -39,49 +39,40 @@ public abstract class PessoaBean implements Serializable {
 		this.ativo = ativo;
 	}
 
-
-
 	public int getPessoaID() {
 		return this.pessoaID;
 	}
-
 	public PessoaBean setPessoaID(int pessoaID) {
 		this.pessoaID = pessoaID;
 		return this;
 	}
-
 	public String getEmail() {
 		return email;
 	}
-
-	public void setEmail(String email) {
+	public PessoaBean setEmail(String email) {
 		this.email = email;
+		return this;
 	}
-
 	public Date getDataAlteracao() {
 		return dataAlteracao;
 	}
-
-	public void setDataAlteracao(Date dataAlteracao) {
+	public PessoaBean setDataAlteracao(Date dataAlteracao) {
 		this.dataAlteracao = dataAlteracao;
+		return this;
 	}
-
 	public Date getDataCadastrado() {
 		return dataCadastrado;
 	}
-
-	public void setDataCadastrado(Date dataCadastrado) {
+	public PessoaBean setDataCadastrado(Date dataCadastrado) {
 		this.dataCadastrado = dataCadastrado;
+		return this;
 	}
-
 	public Boolean getAtivo() {
 		return ativo;
 	}
-
-	public void setAtivo(Boolean ativo) {
+	public PessoaBean setAtivo(Boolean ativo) {
 		this.ativo = ativo;
-	}
-	
-	
+		return this;
+	}	
    
 }
