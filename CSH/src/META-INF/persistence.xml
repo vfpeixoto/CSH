@@ -3,7 +3,31 @@
 	<persistence-unit name="CSHUnit" transaction-type="RESOURCE_LOCAL">
 		
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
-		<class>br.com.csh.bean.PessoaBean</class>
+		<class>br.com.csh.model.bean.CidadeBean</class>
+		<class>br.com.csh.model.bean.EnderecoBean</class>
+		<class>br.com.csh.model.bean.EstadoBean</class>
+		<class>br.com.csh.model.bean.EstadoCivilBean</class>
+		<class>br.com.csh.model.bean.FornecedorBean</class>
+		<class>br.com.csh.model.bean.FuncionarioBean</class>
+		<class>br.com.csh.model.bean.FuncionarioDependenteBean</class>
+		<class>br.com.csh.model.bean.GenericBean</class>
+		<class>br.com.csh.model.bean.HospedeBean</class>
+		<class>br.com.csh.model.bean.PaisBean</class>
+		<class>br.com.csh.model.bean.PessoaBean</class>
+		<class>br.com.csh.model.bean.PessoaFisicaBean</class>
+		<class>br.com.csh.model.bean.PessoaJuridicaBean</class>
+		<class>br.com.csh.model.bean.ProfissaoBean</class>
+		<class>br.com.csh.model.bean.QuartoBean</class>
+		<class>br.com.csh.model.bean.QuartoCategoriaBean</class>
+		<class>br.com.csh.model.bean.QuartoLogBean</class>
+		<class>br.com.csh.model.bean.QuartoOpcionalBean</class>
+		<class>br.com.csh.model.bean.ReservaBean</class>
+		<class>br.com.csh.model.bean.ServicoPrestadoBean</class>
+		<class>br.com.csh.model.bean.TelefoneBean</class>
+		<class>br.com.csh.model.bean.TipoEnderecoBean</class>
+		<class>br.com.csh.model.bean.TipoLogradouroBean</class>
+		<class>br.com.csh.model.bean.TipoTelefoneBean</class>
+		<class>br.com.csh.model.bean.UsuarioBean</class>
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 		
 		<properties>
