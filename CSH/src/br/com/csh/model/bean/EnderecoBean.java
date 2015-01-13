@@ -49,80 +49,90 @@ public class EnderecoBean extends GenericBean {
 		return logradouro;
 	}
 
-	public void setLogradouro(String logradouro) {
+	public EnderecoBean setLogradouro(String logradouro) {
 		this.logradouro = logradouro;
+		return this;
 	}
 
 	public int getNumero() {
 		return numero;
 	}
 
-	public void setNumero(int numero) {
+	public EnderecoBean setNumero(int numero) {
 		this.numero = numero;
+		return this;
 	}
 
 	public String getCep() {
 		return cep;
 	}
 
-	public void setCep(String cep) {
+	public EnderecoBean setCep(String cep) {
 		this.cep = cep;
+		return this;
 	}
 
 	public String getBairro() {
 		return bairro;
 	}
 
-	public void setBairro(String bairro) {
+	public EnderecoBean setBairro(String bairro) {
 		this.bairro = bairro;
+		return this;
 	}
 
 	public String getComplemento() {
 		return complemento;
 	}
 
-	public void setComplemento(String complemento) {
+	public EnderecoBean setComplemento(String complemento) {
 		this.complemento = complemento;
+		return this;
 	}
 
 	public String getReferencia() {
 		return referencia;
 	}
 
-	public void setReferencia(String referencia) {
+	public EnderecoBean setReferencia(String referencia) {
 		this.referencia = referencia;
+		return this;
 	}
 
 	public PessoaBean getPessoa() {
 		return pessoa;
 	}
 
-	public void setPessoa(PessoaBean pessoa) {
+	public EnderecoBean setPessoa(PessoaBean pessoa) {
 		this.pessoa = pessoa;
+		return this;
 	}
 
 	public TipoEnderecoBean getTipoEndereco() {
 		return tipoEndereco;
 	}
 
-	public void setTipoEndereco(TipoEnderecoBean tipoEndereco) {
+	public EnderecoBean setTipoEndereco(TipoEnderecoBean tipoEndereco) {
 		this.tipoEndereco = tipoEndereco;
+		return this;
 	}
 
 	public CidadeBean getCidade() {
 		return cidade;
 	}
 
-	public void setCidade(CidadeBean cidade) {
+	public EnderecoBean setCidade(CidadeBean cidade) {
 		this.cidade = cidade;
+		return this;
 	}
 
 	public TipoLogradouroBean getTipoLogradouro() {
 		return tipoLogradouro;
 	}
 
-	public void setTipoLogradouro(TipoLogradouroBean tipoLogradouro) {
+	public EnderecoBean setTipoLogradouro(TipoLogradouroBean tipoLogradouro) {
 		this.tipoLogradouro = tipoLogradouro;
+		return this;
 	}
 
 }

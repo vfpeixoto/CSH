@@ -23,8 +23,9 @@ public class ProfissaoBean extends GenericBean {
 		return descricao;
 	}
 
-	public void setDescricao(String descricao) {
+	public ProfissaoBean setDescricao(String descricao) {
 		this.descricao = descricao;
+		return this;
 	}
 
 	public Collection<PessoaFisicaBean> getPessoasFisica() {
@@ -34,8 +35,9 @@ public class ProfissaoBean extends GenericBean {
 		return pessoasFisica;
 	}
 
-	public void setPessoasFisica(Collection<PessoaFisicaBean> pessoasFisica) {
+	public ProfissaoBean setPessoasFisica(Collection<PessoaFisicaBean> pessoasFisica) {
 		this.pessoasFisica = pessoasFisica;
+		return this;
 	}
 
 }

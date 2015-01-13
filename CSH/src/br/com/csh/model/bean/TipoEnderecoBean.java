@@ -20,16 +20,18 @@ public class TipoEnderecoBean extends GenericBean {
 		return descricao;
 	}
 
-	public void setDescricao(String descricao) {
+	public TipoEnderecoBean setDescricao(String descricao) {
 		this.descricao = descricao;
+		return this;
 	}
 
 	public Collection<EnderecoBean> getEnderecos() {
 		return enderecos;
 	}
 
-	public void setEnderecos(Collection<EnderecoBean> enderecos) {
+	public TipoEnderecoBean setEnderecos(Collection<EnderecoBean> enderecos) {
 		this.enderecos = enderecos;
+		return this;
 	}
 
 }

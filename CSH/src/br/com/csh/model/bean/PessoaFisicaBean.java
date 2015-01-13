@@ -120,32 +120,36 @@ public class PessoaFisicaBean extends PessoaBean implements Serializable {
 		return profissao;
 	}
 
-	public void setProfissao(ProfissaoBean profissao) {
+	public PessoaFisicaBean setProfissao(ProfissaoBean profissao) {
 		this.profissao = profissao;
+		return this;
 	}
 
 	public Collection<PessoaJuridicaBean> getPessoasJuridica() {
 		return pessoasJuridica;
 	}
 
-	public void setPessoasJuridica(Collection<PessoaJuridicaBean> pessoasJuridica) {
+	public PessoaFisicaBean setPessoasJuridica(Collection<PessoaJuridicaBean> pessoasJuridica) {
 		this.pessoasJuridica = pessoasJuridica;
+		return this;
 	}
 
 	public PaisBean getPais() {
 		return pais;
 	}
 
-	public void setPais(PaisBean pais) {
+	public PessoaFisicaBean setPais(PaisBean pais) {
 		this.pais = pais;
+		return this;
 	}
 
 	public HospedeBean getHospede() {
 		return hospede;
 	}
 
-	public void setHospede(HospedeBean hospede) {
+	public PessoaFisicaBean setHospede(HospedeBean hospede) {
 		this.hospede = hospede;
+		return this;
 	}
 	
 	public Sexo getSexo() {

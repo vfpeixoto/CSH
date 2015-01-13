@@ -20,16 +20,18 @@ public class CidadeBean extends GenericBean {
 		return descricao;
 	}
 
-	public void setDescricao(String descricao) {
+	public CidadeBean setDescricao(String descricao) {
 		this.descricao = descricao;
+		return this;
 	}
 
 	public EstadoBean getEstado() {
 		return estado;
 	}
 
-	public void setEstado(EstadoBean estado) {
+	public CidadeBean setEstado(EstadoBean estado) {
 		this.estado = estado;
+		return this;
 	}
 	
 	

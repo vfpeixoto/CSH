@@ -27,14 +27,16 @@ public class EstadoBean extends GenericBean {
 	public String getDescricao() {
 		return descricao;
 	}
-	public void setDescricao(String descricao) {
+	public EstadoBean setDescricao(String descricao) {
 		this.descricao = descricao;
+		return this;
 	}
 	public PaisBean getPais() {
 		return pais;
 	}
-	public void setPais(PaisBean pais) {
+	public EstadoBean setPais(PaisBean pais) {
 		this.pais = pais;
+		return this;
 	}
 
 	

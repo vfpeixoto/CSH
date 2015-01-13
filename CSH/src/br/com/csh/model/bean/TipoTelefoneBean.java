@@ -21,14 +21,16 @@ public class TipoTelefoneBean extends GenericBean {
 	public String getDescricao() {
 		return descricao;
 	}
-	public void setDescricao(String descricao) {
+	public TipoTelefoneBean setDescricao(String descricao) {
 		this.descricao = descricao;
+		return this;
 	}
 	public Collection<TelefoneBean> getTelefones() {
 		return telefones;
 	}
-	public void setTelefones(Collection<TelefoneBean> telefones) {
+	public TipoTelefoneBean setTelefones(Collection<TelefoneBean> telefones) {
 		this.telefones = telefones;
+		return this;
 	}
 
 	

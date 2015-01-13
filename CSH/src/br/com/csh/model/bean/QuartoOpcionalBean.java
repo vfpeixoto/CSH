@@ -28,31 +28,35 @@ public class QuartoOpcionalBean extends GenericBean {
 		return descricao;
 	}
 
-	public void setDescricao(String descricao) {
+	public QuartoOpcionalBean setDescricao(String descricao) {
 		this.descricao = descricao;
+		return this;
 	}
 
 	public double getValor() {
 		return valor;
 	}
 
-	public void setValor(double valor) {
+	public QuartoOpcionalBean setValor(double valor) {
 		this.valor = valor;
+		return this;
 	}
 
 	public int getEstoque() {
 		return estoque;
 	}
 
-	public void setEstoque(int estoque) {
+	public QuartoOpcionalBean setEstoque(int estoque) {
 		this.estoque = estoque;
+		return this;
 	}
 
 	public Collection<QuartoBean> getQuarto() {
 		return quarto;
 	}
 
-	public void setQuarto(Collection<QuartoBean> quarto) {
+	public QuartoOpcionalBean setQuarto(Collection<QuartoBean> quarto) {
 		this.quarto = quarto;
+		return this;
 	}
 }

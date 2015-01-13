@@ -34,32 +34,36 @@ public class QuartoBean extends GenericBean {
 		return numero;
 	}
 
-	public void setNumero(int numero) {
+	public QuartoBean setNumero(int numero) {
 		this.numero = numero;
+		return this;
 	}
 
 	public Collection<QuartoLogBean> getQuartosLog() {
 		return quartosLog;
 	}
 
-	public void setQuartosLog(Collection<QuartoLogBean> quartosLog) {
+	public QuartoBean setQuartosLog(Collection<QuartoLogBean> quartosLog) {
 		this.quartosLog = quartosLog;
+		return this;
 	}
 
 	public Collection<QuartoOpcionalBean> getQuartoOpcionais() {
 		return quartoOpcionais;
 	}
 
-	public void setQuartoOpcionais(
+	public QuartoBean setQuartoOpcionais(
 			Collection<QuartoOpcionalBean> quartoOpcionais) {
 		this.quartoOpcionais = quartoOpcionais;
+		return this;
 	}
 
 	public QuartoCategoriaBean getCategoria() {
 		return categoria;
 	}
 
-	public void setCategoria(QuartoCategoriaBean categoria) {
+	public QuartoBean setCategoria(QuartoCategoriaBean categoria) {
 		this.categoria = categoria;
+		return this;
 	}
 }

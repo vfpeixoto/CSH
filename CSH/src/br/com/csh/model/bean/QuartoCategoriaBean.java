@@ -25,24 +25,27 @@ public class QuartoCategoriaBean extends GenericBean {
 		return descricao;
 	}
 
-	public void setDescricao(String descricao) {
+	public QuartoCategoriaBean setDescricao(String descricao) {
 		this.descricao = descricao;
+		return this;
 	}
 
 	public double getValor() {
 		return valor;
 	}
 
-	public void setValor(double valor) {
+	public QuartoCategoriaBean setValor(double valor) {
 		this.valor = valor;
+		return this;
 	}
 
 	public Collection<QuartoBean> getQuartos() {
 		return quartos;
 	}
 
-	public void setQuartos(Collection<QuartoBean> quartos) {
+	public QuartoCategoriaBean setQuartos(Collection<QuartoBean> quartos) {
 		this.quartos = quartos;
+		return this;
 	}
 
 }
