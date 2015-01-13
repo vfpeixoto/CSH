@@ -1,9 +1,13 @@
 package br.com.csh.model.bean;
 
+import java.util.Collection;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -15,6 +19,9 @@ public abstract class PessoaBean extends GenericBean {
 	@Column(unique = true, length = 150)
 	private String email;
 
+	@OneToMany(fetch = FetchType.LAZY, mappedBy="pessoa")
+	private Collection<EnderecoBean> endereco;
+	
 	public String getEmail() {
 		return this.email;
 	}
