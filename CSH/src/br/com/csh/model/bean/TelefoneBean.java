@@ -36,53 +36,47 @@ public class TelefoneBean extends GenericBean {
 		return ddd;
 	}
 
-	public TelefoneBean setDdd(char ddd) {
+	public void setDdd(char ddd) {
 		this.ddd = ddd;
-		return this;
 	}
 
 	public String getNumero() {
 		return numero;
 	}
 
-	public TelefoneBean setNumero(String numero) {
+	public void setNumero(String numero) {
 		this.numero = numero;
-		return this;
 	}
 
 	public String getContato() {
 		return contato;
 	}
 
-	public TelefoneBean setContato(String contato) {
+	public void setContato(String contato) {
 		this.contato = contato;
-		return this;
 	}
 
 	public TipoTelefoneBean getTipoTelefone() {
 		return tipoTelefone;
 	}
 
-	public TelefoneBean setTipoTelefone(TipoTelefoneBean tipoTelefone) {
+	public void setTipoTelefone(TipoTelefoneBean tipoTelefone) {
 		this.tipoTelefone = tipoTelefone;
-		return this;
 	}
 
 	public PaisBean getPais() {
 		return pais;
 	}
 
-	public TelefoneBean setPais(PaisBean pais) {
+	public void setPais(PaisBean pais) {
 		this.pais = pais;
-		return this;
 	}
 
 	public PessoaBean getPessoaBean() {
 		return pessoaBean;
 	}
 
-	public TelefoneBean setPessoaBean(PessoaBean pessoaBean) {
+	public void setPessoaBean(PessoaBean pessoaBean) {
 		this.pessoaBean = pessoaBean;
-		return this;
 	}
 }

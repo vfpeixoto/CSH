@@ -34,48 +34,41 @@ public class FuncionarioBean extends PessoaFisicaBean {
 		return pis;
 	}
 
-	public FuncionarioBean setPis(String pis) {
+	public void setPis(String pis) {
 		this.pis = pis;
-		return this;
 	}
 
 	public double getSalario() {
 		return salario;
 	}
 
-	public FuncionarioBean setSalario(double salario) {
+	public void setSalario(double salario) {
 		this.salario = salario;
-		return this;
 	}
 
 	public Date getDataAdimissao() {
 		return dataAdimissao;
 	}
 
-	public FuncionarioBean setDataAdimissao(Date dataAdimissao) {
+	public void setDataAdimissao(Date dataAdimissao) {
 		this.dataAdimissao = dataAdimissao;
-		return this;
 	}
 
 	public Date getDataDemissao() {
 		return dataDemissao;
 	}
 
-	public FuncionarioBean setDataDemissao(Date dataDemissao) {
+	public void setDataDemissao(Date dataDemissao) {
 		this.dataDemissao = dataDemissao;
-		return this;
 	}
 
 	public Collection<FuncionarioDependenteBean> getFuncionariosDependente() {
 		return funcionariosDependente;
 	}
 
-	public FuncionarioBean setFuncionariosDependente(
+	public void setFuncionariosDependente(
 			Collection<FuncionarioDependenteBean> funcionariosDependente) {
 		this.funcionariosDependente = funcionariosDependente;
-		return this;
 	}
 
-	
-	
 }

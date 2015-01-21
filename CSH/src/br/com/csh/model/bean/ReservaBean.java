@@ -55,81 +55,72 @@ public class ReservaBean extends GenericBean {
 		return codigoReservaJuridica;
 	}
 
-	public ReservaBean setCodigoReservaJuridica(String codigoReservaJuridica) {
+	public void setCodigoReservaJuridica(String codigoReservaJuridica) {
 		this.codigoReservaJuridica = codigoReservaJuridica;
-		return this;
 	}
 
 	public Date getDataInicio() {
 		return dataInicio;
 	}
 
-	public ReservaBean setDataInicio(Date dataInicio) {
+	public void setDataInicio(Date dataInicio) {
 		this.dataInicio = dataInicio;
-		return this;
 	}
 
 	public Date getDataFim() {
 		return dataFim;
 	}
 
-	public ReservaBean setDataFim(Date dataFim) {
+	public void setDataFim(Date dataFim) {
 		this.dataFim = dataFim;
-		return this;
 	}
 
 	public Date getDataCheckIn() {
 		return dataCheckIn;
 	}
 
-	public ReservaBean setDataCheckIn(Date dataCheckIn) {
+	public void setDataCheckIn(Date dataCheckIn) {
 		this.dataCheckIn = dataCheckIn;
-		return this;
 	}
 
 	public Date getDataCheckOut() {
 		return dataCheckOut;
 	}
 
-	public ReservaBean setDataCheckOut(Date dataCheckOut) {
+	public void setDataCheckOut(Date dataCheckOut) {
 		this.dataCheckOut = dataCheckOut;
-		return this;
 	}
 
 	public Date getDataCancelamento() {
 		return dataCancelamento;
 	}
 
-	public ReservaBean setDataCancelamento(Date dataCancelamento) {
+	public void setDataCancelamento(Date dataCancelamento) {
 		this.dataCancelamento = dataCancelamento;
-		return this;
 	}
 
 	public double getValorTotal() {
 		return valorTotal;
 	}
 
-	public ReservaBean setValorTotal(double valorTotal) {
+	public void setValorTotal(double valorTotal) {
 		this.valorTotal = valorTotal;
-		return this;
 	}
 
 	public PessoaFisicaBean getCliente() {
 		return cliente;
 	}
 
-	public ReservaBean setCliente(PessoaFisicaBean cliente) {
+	public void setCliente(PessoaFisicaBean cliente) {
 		this.cliente = cliente;
-		return this;
 	}
 
 	public QuartoBean getQuarto() {
 		return quarto;
 	}
 
-	public ReservaBean setQuarto(QuartoBean quarto) {
+	public void setQuarto(QuartoBean quarto) {
 		this.quarto = quarto;
-		return this;
 	}
 
 }

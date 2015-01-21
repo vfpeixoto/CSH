@@ -8,11 +8,16 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "Quarto")
+@NamedQueries({
+@NamedQuery(name="quartoBean.buscarPorNumero", query = "SELECT Q FROM QuartoBean Q WHERE Q.numero = :numero")
+})
 public class QuartoBean extends GenericBean {
 	private static final long serialVersionUID = 1L;
 
@@ -34,36 +39,32 @@ public class QuartoBean extends GenericBean {
 		return numero;
 	}
 
-	public QuartoBean setNumero(int numero) {
+	public void setNumero(int numero) {
 		this.numero = numero;
-		return this;
 	}
 
 	public Collection<QuartoLogBean> getQuartosLog() {
 		return quartosLog;
 	}
 
-	public QuartoBean setQuartosLog(Collection<QuartoLogBean> quartosLog) {
+	public void setQuartosLog(Collection<QuartoLogBean> quartosLog) {
 		this.quartosLog = quartosLog;
-		return this;
 	}
 
 	public Collection<QuartoOpcionalBean> getQuartoOpcionais() {
 		return quartoOpcionais;
 	}
 
-	public QuartoBean setQuartoOpcionais(
+	public void setQuartoOpcionais(
 			Collection<QuartoOpcionalBean> quartoOpcionais) {
 		this.quartoOpcionais = quartoOpcionais;
-		return this;
 	}
 
 	public QuartoCategoriaBean getCategoria() {
 		return categoria;
 	}
 
-	public QuartoBean setCategoria(QuartoCategoriaBean categoria) {
+	public void setCategoria(QuartoCategoriaBean categoria) {
 		this.categoria = categoria;
-		return this;
 	}
 }

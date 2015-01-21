@@ -20,9 +20,8 @@ public class UsuarioBean {
 		return id;
 	}
 
-	public UsuarioBean setId(int id) {
+	public void setId(int id) {
 		this.id = id;
-		return this;
 	}
 	
 	

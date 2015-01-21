@@ -3,6 +3,7 @@ package br.com.csh.model.bean;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -13,6 +14,8 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
+import com.sun.istack.internal.Nullable;
+
 @MappedSuperclass
 public abstract class GenericBean implements Serializable {
 
@@ -22,18 +25,22 @@ public abstract class GenericBean implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
-	@Temporal(TemporalType.TIME)
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date dataCadastro;
 	
-	@Temporal(TemporalType.TIME)
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date dataAlteracao;
 	
-	@Temporal(TemporalType.TIME)
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date dataExclusao;
 	
 	private int usuarioCadastro;
-	private int usuarioAlteracao;
-	private int usuarioExlusao;
+	
+	@Column(nullable = true)
+	private @Nullable Integer usuarioAlteracao;
+	
+	@Column(nullable = true)
+	private @Nullable Integer usuarioExlusao;
 	
 	@Transient
 	private UsuarioBean usuarioBean;
@@ -44,9 +51,8 @@ public abstract class GenericBean implements Serializable {
 		return id;
 	}
 
-	public GenericBean setId(int id) {
+	public void setId(int id) {
 		this.id = id;
-		return this;
 	}
 
 	public Date getDataCadastro() {
@@ -77,18 +83,16 @@ public abstract class GenericBean implements Serializable {
 		return ativo;
 	}
 
-	public GenericBean setAtivo(boolean ativo) {
+	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
-		return this;
 	}
 
 	public UsuarioBean getUsuario() {
 		return usuarioBean;
 	}
 
-	public GenericBean setUsuario(UsuarioBean usuarioBean) {
+	public void setUsuario(UsuarioBean usuarioBean) {
 		this.usuarioBean = usuarioBean;
-		return this;
 	}
 
 	@PrePersist
@@ -105,7 +109,7 @@ public abstract class GenericBean implements Serializable {
 			usuarioExlusao = usuarioBean.getId();
 		} else {
 			dataAlteracao = new Date();
-			usuarioAlteracao = usuarioBean.getId();
+			//usuarioAlteracao = usuarioBean.getId();
 		}
 	}
 }

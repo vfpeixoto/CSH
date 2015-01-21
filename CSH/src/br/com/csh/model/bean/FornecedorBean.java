@@ -32,45 +32,40 @@ public class FornecedorBean extends PessoaJuridicaBean {
 		return codigoBanco;
 	}
 
-	public FornecedorBean setCodigoBanco(char codigoBanco) {
+	public void setCodigoBanco(char codigoBanco) {
 		this.codigoBanco = codigoBanco;
-		return this;
 	}
 
 	public TipoConta getTipoConta() {
 		return tipoConta;
 	}
 
-	public FornecedorBean setTipoConta(TipoConta tipoConta) {
+	public void setTipoConta(TipoConta tipoConta) {
 		this.tipoConta = tipoConta;
-		return this;
 	}
 
 	public String getAgencia() {
 		return agencia;
 	}
 
-	public FornecedorBean setAgencia(String agencia) {
+	public void setAgencia(String agencia) {
 		this.agencia = agencia;
-		return this;
 	}
 
 	public String getNumeroConta() {
 		return numeroConta;
 	}
 
-	public FornecedorBean setNumeroConta(String numeroConta) {
+	public void setNumeroConta(String numeroConta) {
 		this.numeroConta = numeroConta;
-		return this;
 	}
 
 	public String getCodigoOperacao() {
 		return codigoOperacao;
 	}
 
-	public FornecedorBean setCodigoOperacao(String codigoOperacao) {
+	public void setCodigoOperacao(String codigoOperacao) {
 		this.codigoOperacao = codigoOperacao;
-		return this;
 	}
 	
 	

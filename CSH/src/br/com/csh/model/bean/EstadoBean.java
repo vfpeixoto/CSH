@@ -6,11 +6,16 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="Estado")
+@NamedQueries({
+@NamedQuery(name="estadoBean.buscarPorDescricao", query = "SELECT E FROM EstadoBean E WHERE UPPER(E.descricao) like :descricao")
+})
 public class EstadoBean extends GenericBean {
 	private static final long serialVersionUID = 1L;
 	
@@ -27,16 +32,14 @@ public class EstadoBean extends GenericBean {
 	public String getDescricao() {
 		return descricao;
 	}
-	public EstadoBean setDescricao(String descricao) {
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-		return this;
 	}
 	public PaisBean getPais() {
 		return pais;
 	}
-	public EstadoBean setPais(PaisBean pais) {
+	public void setPais(PaisBean pais) {
 		this.pais = pais;
-		return this;
 	}
 
 	

@@ -3,11 +3,16 @@ package br.com.csh.model.bean;
 import java.util.Collection;
 
 import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "TipoEndereco")
+@NamedQueries({
+@NamedQuery(name="tipoEnderecoBean.buscarPorDescricao", query = "SELECT T FROM TipoEnderecoBean T WHERE UPPER(T.descricao) like :descricao")
+})
 public class TipoEnderecoBean extends GenericBean {
 	private static final long serialVersionUID = 1L;
 
@@ -20,18 +25,16 @@ public class TipoEnderecoBean extends GenericBean {
 		return descricao;
 	}
 
-	public TipoEnderecoBean setDescricao(String descricao) {
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-		return this;
 	}
 
 	public Collection<EnderecoBean> getEnderecos() {
 		return enderecos;
 	}
 
-	public TipoEnderecoBean setEnderecos(Collection<EnderecoBean> enderecos) {
+	public void setEnderecos(Collection<EnderecoBean> enderecos) {
 		this.enderecos = enderecos;
-		return this;
 	}
 
 }

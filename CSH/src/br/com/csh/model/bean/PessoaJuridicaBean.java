@@ -42,44 +42,38 @@ public class PessoaJuridicaBean extends PessoaBean implements Serializable {
 	public String getRazaoSocial() {
 		return razaoSocial;
 	}
-	public PessoaJuridicaBean setRazaoSocial(String razaoSocial) {
+	public void setRazaoSocial(String razaoSocial) {
 		this.razaoSocial = razaoSocial;
-		return this;
 	}
 	public String getFantasia() {
 		return fantasia;
 	}
-	public PessoaJuridicaBean setFantasia(String fantasia) {
+	public void setFantasia(String fantasia) {
 		this.fantasia = fantasia;
-		return this;
 	}
 	public String getCnpj() {
 		return cnpj;
 	}
-	public PessoaJuridicaBean setCnpj(String cnpj) {
+	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
-		return this;
 	}
 	public String getInscricaoEstadual() {
 		return inscricaoEstadual;
 	}
-	public PessoaJuridicaBean setInscricaoEstadual(String inscricaoEstadual) {
+	public void setInscricaoEstadual(String inscricaoEstadual) {
 		this.inscricaoEstadual = inscricaoEstadual;
-		return this;
 	}
 	public String getInscricaoMunicipal() {
 		return inscricaoMunicipal;
 	}
-	public PessoaJuridicaBean setInscricaoMunicipal(String inscricaoMunicipal) {
+	public void setInscricaoMunicipal(String inscricaoMunicipal) {
 		this.inscricaoMunicipal = inscricaoMunicipal;
-		return this;
 	}
 	public String getCodigoReserva() {
 		return codigoReserva;
 	}
-	public PessoaJuridicaBean setCodigoReserva(String codigoReserva) {
+	public void setCodigoReserva(String codigoReserva) {
 		this.codigoReserva = codigoReserva;
-		return this;
 	}
 	
 }

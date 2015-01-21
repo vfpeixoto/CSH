@@ -28,36 +28,32 @@ public class ServicoPrestadoBean extends GenericBean {
 		return nomeArquivo;
 	}
 
-	public ServicoPrestadoBean setNomeArquivo(String nomeArquivo) {
+	public void setNomeArquivo(String nomeArquivo) {
 		this.nomeArquivo = nomeArquivo;
-		return this;
 	}
 
 	public int getAvaliacao() {
 		return avaliacao;
 	}
 
-	public ServicoPrestadoBean setAvaliacao(int avaliacao) {
+	public void setAvaliacao(int avaliacao) {
 		this.avaliacao = avaliacao;
-		return this;
 	}
 
 	public double getValorPrestado() {
 		return valorPrestado;
 	}
 
-	public ServicoPrestadoBean setValorPrestado(double valorPrestado) {
+	public void setValorPrestado(double valorPrestado) {
 		this.valorPrestado = valorPrestado;
-		return this;
 	}
 
 	public FornecedorBean getFornecedor() {
 		return fornecedor;
 	}
 
-	public ServicoPrestadoBean setFornecedor(FornecedorBean fornecedor) {
+	public void setFornecedor(FornecedorBean fornecedor) {
 		this.fornecedor = fornecedor;
-		return this;
 	}
 
 }

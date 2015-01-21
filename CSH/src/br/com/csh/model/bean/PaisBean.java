@@ -29,18 +29,16 @@ public class PaisBean extends GenericBean {
 		return ddi;
 	}
 
-	public PaisBean setDdi(char ddi) {
+	public void setDdi(char ddi) {
 		this.ddi = ddi;
-		return this;
 	}
 
 	public String getDescricao() {
 		return descricao;
 	}
 
-	public PaisBean setDescricao(String descricao) {
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-		return this;
 	}
 
 	public Collection<PessoaFisicaBean> getPessoasFisica() {
@@ -50,18 +48,16 @@ public class PaisBean extends GenericBean {
 		return pessoasFisica;
 	}
 
-	public PaisBean setPessoasFisica(Collection<PessoaFisicaBean> pessoasFisica) {
+	public void setPessoasFisica(Collection<PessoaFisicaBean> pessoasFisica) {
 		this.pessoasFisica = pessoasFisica;
-		return this;
 	}
 
 	public Collection<EstadoBean> getEstados() {
 		return estados;
 	}
 
-	public PaisBean setEstados(Collection<EstadoBean> estados) {
+	public void setEstados(Collection<EstadoBean> estados) {
 		this.estados = estados;
-		return this;
 	}
 
 }

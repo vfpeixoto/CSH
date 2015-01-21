@@ -63,45 +63,40 @@ public class PessoaFisicaBean extends PessoaBean implements Serializable {
 		return nome;
 	}
 
-	public PessoaFisicaBean setNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
-		return this;
 	}
 
 	public Date getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public PessoaFisicaBean setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
-		return this;
 	}
 
 	public String getCpf() {
 		return cpf;
 	}
 
-	public PessoaFisicaBean setCpf(String cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
-		return this;
 	}
 
 	public String getRg() {
 		return rg;
 	}
 
-	public PessoaFisicaBean setRg(String rg) {
+	public void setRg(String rg) {
 		this.rg = rg;
-		return this;
 	}
 
 	public char getOrgaoEmissor() {
 		return orgaoEmissor;
 	}
 
-	public PessoaFisicaBean setOrgaoEmissor(char orgaoEmissor) {
+	public void setOrgaoEmissor(char orgaoEmissor) {
 		this.orgaoEmissor = orgaoEmissor;
-		return this;
 	}
 
 	public EstadoCivilBean getEstadoCivil() {
@@ -111,53 +106,47 @@ public class PessoaFisicaBean extends PessoaBean implements Serializable {
 		return estadoCivil;
 	}
 
-	public PessoaFisicaBean setEstadoCivil(EstadoCivilBean estadoCivil) {
+	public void setEstadoCivil(EstadoCivilBean estadoCivil) {
 		this.estadoCivil = estadoCivil;
-		return this;
 	}
 
 	public ProfissaoBean getProfissao() {
 		return profissao;
 	}
 
-	public PessoaFisicaBean setProfissao(ProfissaoBean profissao) {
+	public void setProfissao(ProfissaoBean profissao) {
 		this.profissao = profissao;
-		return this;
 	}
 
 	public Collection<PessoaJuridicaBean> getPessoasJuridica() {
 		return pessoasJuridica;
 	}
 
-	public PessoaFisicaBean setPessoasJuridica(Collection<PessoaJuridicaBean> pessoasJuridica) {
+	public void setPessoasJuridica(Collection<PessoaJuridicaBean> pessoasJuridica) {
 		this.pessoasJuridica = pessoasJuridica;
-		return this;
 	}
 
 	public PaisBean getPais() {
 		return pais;
 	}
 
-	public PessoaFisicaBean setPais(PaisBean pais) {
+	public void setPais(PaisBean pais) {
 		this.pais = pais;
-		return this;
 	}
 
 	public HospedeBean getHospede() {
 		return hospede;
 	}
 
-	public PessoaFisicaBean setHospede(HospedeBean hospede) {
+	public void setHospede(HospedeBean hospede) {
 		this.hospede = hospede;
-		return this;
 	}
 	
 	public Sexo getSexo() {
 		return sexo;
 	}
 
-	public PessoaFisicaBean setSexo(Sexo sexo) {
+	public void setSexo(Sexo sexo) {
 		this.sexo = sexo;
-		return this;
 	}
 }

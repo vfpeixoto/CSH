@@ -4,11 +4,16 @@ import java.util.Collection;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "QuartoCategoria")
+@NamedQueries({
+@NamedQuery(name="quartoCategoriaBean.buscarPorDescricao", query = "SELECT Q FROM QuartoCategoriaBean Q WHERE UPPER(Q.descricao) like :descricao")
+})
 public class QuartoCategoriaBean extends GenericBean {
 	private static final long serialVersionUID = 1L;
 
@@ -25,27 +30,24 @@ public class QuartoCategoriaBean extends GenericBean {
 		return descricao;
 	}
 
-	public QuartoCategoriaBean setDescricao(String descricao) {
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-		return this;
 	}
 
 	public double getValor() {
 		return valor;
 	}
 
-	public QuartoCategoriaBean setValor(double valor) {
+	public void setValor(double valor) {
 		this.valor = valor;
-		return this;
 	}
 
 	public Collection<QuartoBean> getQuartos() {
 		return quartos;
 	}
 
-	public QuartoCategoriaBean setQuartos(Collection<QuartoBean> quartos) {
+	public void setQuartos(Collection<QuartoBean> quartos) {
 		this.quartos = quartos;
-		return this;
 	}
 
 }

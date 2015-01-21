@@ -43,45 +43,40 @@ public class HospedeBean implements Serializable {
 		return hospedeId;
 	}
 
-	public HospedeBean setHospedeId(int hospedeId) {
+	public void setHospedeId(int hospedeId) {
 		this.hospedeId = hospedeId;
-		return this;
 	}
 
 	public String getNome() {
 		return nome;
 	}
 
-	public HospedeBean setNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
-		return this;
 	}
 
 	public Date getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public HospedeBean setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
-		return this;
 	}
 
 	public PessoaFisicaBean getCliente() {
 		return cliente;
 	}
 
-	public HospedeBean setCliente(PessoaFisicaBean cliente) {
+	public void setCliente(PessoaFisicaBean cliente) {
 		this.cliente = cliente;
-		return this;
 	}
 
 	public ReservaBean getReserva() {
 		return reserva;
 	}
 
-	public HospedeBean setReserva(ReservaBean reserva) {
+	public void setReserva(ReservaBean reserva) {
 		this.reserva = reserva;
-		return this;
 	}
 
 }

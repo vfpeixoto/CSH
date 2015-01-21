@@ -23,9 +23,8 @@ public class EstadoCivilBean extends GenericBean {
 		return descricao;
 	}
 
-	public EstadoCivilBean setDescricao(String descricao) {
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-		return this;
 	}
 
 	public Collection<PessoaFisicaBean> getPessoasFisica() {
@@ -35,9 +34,8 @@ public class EstadoCivilBean extends GenericBean {
 		return pessoasFisica;
 	}
 
-	public EstadoCivilBean setPessoasFisica(Collection<PessoaFisicaBean> pessoasFisica) {
+	public void setPessoasFisica(Collection<PessoaFisicaBean> pessoasFisica) {
 		this.pessoasFisica = pessoasFisica;
-		return this;
 	}
 
 }

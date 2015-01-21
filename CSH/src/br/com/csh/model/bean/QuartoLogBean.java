@@ -38,36 +38,32 @@ public class QuartoLogBean implements Serializable {
 		return id;
 	}
 
-	public QuartoLogBean setId(int id) {
+	public void setId(int id) {
 		this.id = id;
-		return this;
 	}
 
 	public String getObservacao() {
 		return observacao;
 	}
 
-	public QuartoLogBean setObservacao(String observacao) {
+	public void setObservacao(String observacao) {
 		this.observacao = observacao;
-		return this;
 	}
 
 	public Date getDataOperacao() {
 		return dataOperacao;
 	}
 
-	public QuartoLogBean setDataOperacao(Date dataOperacao) {
+	public void setDataOperacao(Date dataOperacao) {
 		this.dataOperacao = dataOperacao;
-		return this;
 	}
 
 	public QuartoBean getQuarto() {
 		return quarto;
 	}
 
-	public QuartoLogBean setQuarto(QuartoBean quarto) {
+	public void setQuarto(QuartoBean quarto) {
 		this.quarto = quarto;
-		return this;
 	}
 
 	@PrePersist

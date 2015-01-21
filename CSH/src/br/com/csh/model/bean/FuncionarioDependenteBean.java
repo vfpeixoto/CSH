@@ -35,36 +35,31 @@ public class FuncionarioDependenteBean {
 		return id;
 	}
 
-	public FuncionarioDependenteBean setId(int id) {
-		this.id = id;
-		return this;
+	public void setId(int id) {
 	}
 
 	public String getNome() {
 		return nome;
 	}
 
-	public FuncionarioDependenteBean setNome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
-		return this;
 	}
 
 	public Date getDataNascimento() {
 		return dataNascimento;
 	}
 
-	public FuncionarioDependenteBean setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
-		return this;
 	}
 
 	public FuncionarioBean getFuncionario() {
 		return funcionario;
 	}
 
-	public FuncionarioDependenteBean setFuncionario(FuncionarioBean funcionario) {
+	public void setFuncionario(FuncionarioBean funcionario) {
 		this.funcionario = funcionario;
-		return this;
 	}
 	
 	
